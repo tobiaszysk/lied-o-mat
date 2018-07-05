@@ -19,6 +19,9 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+        <!-- jQuery -->
+        <script src="js/jquery-3.3.1.min.js"></script>
     </head>
     <body>
         <div class="jumbotron">
@@ -105,11 +108,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 offset-md-2">
+                <div class="col-md-5 offset-md-2">
                     <div class="card">
                         <div class="card-body song-display">
-                            870<br>
-                            1-3
+                            <p id="display-number">0870</p>
+                            <p id="display-verses">1-3</p>
                         </div>
                     </div>
                     <br>
@@ -117,58 +120,58 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-lg">1</button>
+                                    <button id="oneBtn" type="button" class="btn btn-lg">1</button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-lg">2</button>
+                                    <button id="twoBtn" type="button" class="btn btn-lg">2</button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-lg">3</button>
+                                    <button id="threeBtn" type="button" class="btn btn-lg">3</button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-primary btn-lg"><</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <button type="button" class="btn btn-lg">4</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-lg">5</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-lg">6</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-primary btn-lg">></button>
+                                    <button id="backBtn" type="button" class="btn btn-primary btn-lg"><</button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-lg">7</button>
+                                    <button id="fourBtn" type="button" class="btn btn-lg">4</button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-lg">8</button>
+                                    <button id="fiveBtn" type="button" class="btn btn-lg">5</button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-lg">9</button>
+                                    <button id="sixBtn" type="button" class="btn btn-lg">6</button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-danger btn-lg">L</button>
+                                    <button id="nextBtn" type="button" class="btn btn-primary btn-lg">></button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-lg">-</button>
+                                    <button id="sevenBtn" type="button" class="btn btn-lg">7</button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-lg">0</button>
+                                    <button id="eightBtn" type="button" class="btn btn-lg">8</button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-lg">+</button>
+                                    <button id="nineBtn" type="button" class="btn btn-lg">9</button>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-success btn-lg">A</button>
+                                    <button id="delBtn" type="button" class="btn btn-danger btn-lg">L</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="minusBtn" type="button" class="btn btn-lg">-</button>
+                                </td>
+                                <td>
+                                    <button id="zeroBtn" type="button" class="btn btn-lg">0</button>
+                                </td>
+                                <td>
+                                    <button id="plusBtn" type="button" class="btn btn-lg">+</button>
+                                </td>
+                                <td>
+                                    <button id="setBtn" type="button" class="btn btn-success btn-lg">A</button>
                                 </td>
                             </tr>
                         </tbody>
