@@ -24,6 +24,26 @@
         <script src="js/jquery-3.3.1.min.js"></script>
     </head>
     <body>
+        <script>
+            var songlist = [
+                {label: "Einzug", number: "", comment: ""},
+                {label: "Bußakt", number: "", comment: ""},
+                {label: "Kyrie", number: "", comment: ""},
+                {label: "Gloria", number: "", comment: ""},
+                {label: "Antwortpsalm", number: "", comment: ""},
+                {label: "Ruf vor dem Evangelium", number: "", comment: ""},
+                {label: "Credo", number: "", comment: ""},
+                {label: "Fürbitten", number: "", comment: ""},
+                {label: "Gabenbereitung", number: "", comment: ""},
+                {label: "Sanctus", number: "", comment: ""},
+                {label: "Agnus Dei", number: "", comment: ""},
+                {label: "Danksagung", number: "", comment: ""},
+                {label: "Schluss", number: "", comment: ""}
+            ];
+
+            var position = 0;
+        </script>
+
         <div class="jumbotron">
             <h1>Lied O Mat</h1>
             <p>Canticum album creaturae ad missas Catholico</p>
@@ -39,69 +59,69 @@
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td>Einzug:</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td id="label1"></td>
+                                        <td id="number1"></td>
+                                        <td id="comment1"></td>
                                     </tr>
                                     <tr>
-                                        <td>Bußakt:</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td id="label2"></td>
+                                        <td id="number2"></td>
+                                        <td id="comment2"></td>
                                     </tr>
                                     <tr>
-                                        <td>Kyrie:</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td id="label3"></td>
+                                        <td id="number3"></td>
+                                        <td id="comment3"></td>
                                     </tr>
                                     <tr>
-                                        <td>Gloria:</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td id="label4"></td>
+                                        <td id="number4"></td>
+                                        <td id="comment4"></td>
                                     </tr>
                                     <tr>
-                                        <td>Antwortpsalm:</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td id="label5"></td>
+                                        <td id="number5"></td>
+                                        <td id="comment5"></td>
                                     </tr>
                                     <tr>
-                                        <td>Ruf vor dem Evangelium:</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td id="label6"></td>
+                                        <td id="number6"></td>
+                                        <td id="comment6"></td>
                                     </tr>
                                     <tr>
-                                        <td>Credo:</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td id="label7"></td>
+                                        <td id="number7"></td>
+                                        <td id="comment7"></td>
                                     </tr>
                                     <tr>
-                                        <td>Fürbitten</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td id="label8"></td>
+                                        <td id="number8"></td>
+                                        <td id="comment8"></td>
                                     </tr>
                                     <tr>
-                                        <td>Gabenbereitung:</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td id="label9"></td>
+                                        <td id="number9"></td>
+                                        <td id="comment9"></td>
                                     </tr>
                                     <tr>
-                                        <td>Sanctus:</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td id="label10"></td>
+                                        <td id="number10"></td>
+                                        <td id="comment10"></td>
                                     </tr>
                                     <tr>
-                                        <td>Agnus Dei:</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td id="label11"></td>
+                                        <td id="number11"></td>
+                                        <td id="comment11"></td>
                                     </tr>
                                     <tr>
-                                        <td>Danksagung:</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td id="label12"></td>
+                                        <td id="number12"></td>
+                                        <td id="comment12"></td>
                                     </tr>
                                     <tr>
-                                        <td>Schluss:</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td id="label13"></td>
+                                        <td id="number13"></td>
+                                        <td id="comment13"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -111,8 +131,8 @@
                 <div class="col-md-5 offset-md-2">
                     <div class="card">
                         <div class="card-body song-display">
-                            <p id="display-number">0870</p>
-                            <p id="display-verses">1-3</p>
+                            <p id="display-number"></p>
+                            <p id="display-verses"></p>
                         </div>
                     </div>
                     <br>
