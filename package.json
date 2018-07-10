@@ -1,0 +1,19 @@
+{
+  "name": "lied-o-mat",
+  "version": "1.0.0",
+  "description": "Werkzeug zur Liedzettelerstellung für katholische Messen",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyskfhmuenster/lied-o-mat.git"
+  },
+  "author": "Tobias Zysk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zyskfhmuenster/lied-o-mat/issues"
+  },
+  "homepage": "https://github.com/zyskfhmuenster/lied-o-mat#readme"
+}
