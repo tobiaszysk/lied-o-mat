@@ -38,9 +38,9 @@ function typeContent(char) {
     } else if (char === 'L') {
         pNumber.text(songlist[position].label);
         pVerses.text('')
-    } else if (numberLen < 4) {
+    } else if (numberLen < 3) {
         numberText += char;
-        let allowed = /^[0-9]{0,4}$/g.test(numberText);
+        let allowed = /^[0-9]{0,3}$/g.test(numberText);
         if (allowed) {
             pNumber.text(numberText);
         }
