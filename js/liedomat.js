@@ -15,12 +15,12 @@ function typeContent(char) {
 
     if (char === '<') {
         position--;
-        position = (position+13) % 13;
+        position = (position+12) % 12;
         pNumber.text(songlist[position].label);
     }
     else if (char === '>') {
         position++;
-        position = position % 13;
+        position = position % 12;
         pNumber.text(songlist[position].label);
     }
     else if (char === 'A') {
@@ -30,7 +30,7 @@ function typeContent(char) {
 
         songlist[position].number = saveNumber;
         position++;
-        position = position % 13;
+        position = position % 12;
 
         pNumber.text(songlist[position].label);
         pVerses.text('')
@@ -101,7 +101,12 @@ function makePrintPage() {
         }
 
         td {
+            padding-right: 1em;
             padding-bottom: 1.5em;
+        }
+        
+        .card {
+            margin-bottom: 2em;
         }
     </style>`;
 
@@ -186,11 +191,6 @@ function makePrintPage() {
                     <td>${songlist[11].number}</td>
                     <td>${songlist[11].comment}</td>
                 </tr>
-                <tr>
-                    <td>${songlist[12].label}</td>
-                    <td>${songlist[12].number}</td>
-                    <td>${songlist[12].comment}</td>
-                </tr>
             </tbody>
         </table>
     </div>
@@ -241,7 +241,6 @@ function setFields() {
     $('#label10').text(songlist[9].label + ':');
     $('#label11').text(songlist[10].label + ':');
     $('#label12').text(songlist[11].label + ':');
-    $('#label13').text(songlist[12].label + ':');
 
     $('#number1').text(songlist[0].number);
     $('#number2').text(songlist[1].number);
@@ -255,7 +254,6 @@ function setFields() {
     $('#number10').text(songlist[9].number);
     $('#number11').text(songlist[10].number);
     $('#number12').text(songlist[11].number);
-    $('#number13').text(songlist[12].number);
 
     $('#display-number').text(songlist[position].label);
 }

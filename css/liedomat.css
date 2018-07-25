@@ -19,3 +19,7 @@
 .row {
     margin-top: 2em;
 }
+
+div.card-body td {
+    padding-right: 1em;
+}
